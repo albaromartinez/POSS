@@ -100,7 +100,12 @@ session_start();
   <script src="vistas/bower_components/morris.js/morris.min.js"></script>
 
   <!-- ChartJS http://www.chartjs.org/-->
-  <script src="vistas/bower_components/Chart.js/Chart.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 
 
 
@@ -186,6 +191,8 @@ CUERPO DOCUMENTO
 <script src="vistas/js/clientes.js"></script>
 <script src="vistas/js/ventas.js"></script>
 <script src="vistas/js/reportes.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 
 </body>
 </html>
