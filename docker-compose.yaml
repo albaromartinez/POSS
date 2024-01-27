@@ -12,7 +12,7 @@ services:
       - 3306:3306
 
   app:
-    image: php:7.1.12-apache
+    image: ajmc5890/php:7.1.12-apache
     restart: unless-stopped
     environment:
       - DB_CONNECTION=mysql

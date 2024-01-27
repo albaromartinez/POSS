@@ -4,3 +4,9 @@ RewriteEngine On
 
 # Redirige todas las solicitudes a index.php con la variable 'ruta'
 RewriteRule ^([-a-zA-Z0-9]+)$ index.php?ruta=$1 [QSA,L]
+
+
+#Si no funciona ejecutar el siguiente comando
+##  apache2ctl -M | grep rewrite
+##  sudo a2enmod rewrite
+##  service apache2 restart

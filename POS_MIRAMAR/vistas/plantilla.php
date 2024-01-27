@@ -63,6 +63,9 @@ session_start();
   <!-- Bootstrap 3.3.7 -->
   <script src="vistas/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
+  <!-- CDN Bootstrap 5.3.2 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
   <!-- FastClick -->
   <script src="vistas/bower_components/fastclick/lib/fastclick.js"></script>
   
@@ -99,7 +102,7 @@ session_start();
   <script src="vistas/bower_components/raphael/raphael.min.js"></script>
   <script src="vistas/bower_components/morris.js/morris.min.js"></script>
 
-  <!-- ChartJS http://www.chartjs.org/-->
+  <!-- CDN ChartJS http://www.chartjs.org/-->
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script> -->
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
@@ -156,8 +159,8 @@ CUERPO DOCUMENTO
 
       }else{
 
-        // include "modulos/404.php";
-        echo 'Eror, no se encontro la ruta';
+        include "modulos/404.php";
+        // echo 'Eror, no se encontro la ruta';
 
       }
 

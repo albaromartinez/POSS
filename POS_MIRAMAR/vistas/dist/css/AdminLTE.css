@@ -9,6 +9,14 @@
  * Core: General Layout Style
  * -------------------------
  */
+
+ /* Media query para pantallas más pequeñas, ajusta el tamaño del texto */
+ @media only screen and (max-width: 530px) {
+  .small-box h3{
+    font-size: 28px !important;  /* Tamaño para pantallas más pequeñas */
+  }
+}
+
 html,
 body {
   height: 100%;

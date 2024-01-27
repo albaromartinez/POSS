@@ -25,7 +25,7 @@ $totalProductos = count($productos);
     
     <div class="inner">
       
-      <h3>$<?php echo number_format($ventas["total"],2); ?></h3>
+      <h3  class="cajasuperiorr-ventas">$<?php echo number_format($ventas["total"],2); ?></h3>
 
       <p>Ventas</p>
     
@@ -38,34 +38,6 @@ $totalProductos = count($productos);
     </div>
     
     <a href="ventas" class="small-box-footer">
-      
-      Más info <i class="fa fa-arrow-circle-right"></i>
-    
-    </a>
-
-  </div>
-
-</div>
-
-<div class="col-lg-3 col-xs-6">
-
-  <div class="small-box bg-green">
-    
-    <div class="inner">
-    
-      <h3><?php echo number_format($totalCategorias); ?></h3>
-
-      <p>Categorías</p>
-    
-    </div>
-    
-    <div class="icon">
-    
-      <i class="ion ion-clipboard"></i>
-    
-    </div>
-    
-    <a href="categorias" class="small-box-footer">
       
       Más info <i class="fa fa-arrow-circle-right"></i>
     
@@ -103,6 +75,8 @@ $totalProductos = count($productos);
 
 </div>
 
+
+
 <div class="col-lg-3 col-xs-6">
 
   <div class="small-box bg-red">
@@ -122,6 +96,35 @@ $totalProductos = count($productos);
     </div>
     
     <a href="productos" class="small-box-footer">
+      
+      Más info <i class="fa fa-arrow-circle-right"></i>
+    
+    </a>
+
+  </div>
+
+</div>
+
+
+<div class="col-lg-3 col-xs-6">
+
+  <div class="small-box bg-green">
+    
+    <div class="inner">
+    
+      <h3><?php echo number_format($totalCategorias); ?></h3>
+
+      <p>Categorías</p>
+    
+    </div>
+    
+    <div class="icon">
+    
+      <i class="ion ion-clipboard"></i>
+    
+    </div>
+    
+    <a href="categorias" class="small-box-footer">
       
       Más info <i class="fa fa-arrow-circle-right"></i>
     

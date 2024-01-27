@@ -16,7 +16,8 @@
 
 		<span class="logo-lg">
 			
-			<img src="vistas/img/plantilla/LHOR.png" class="img-responsive" style="padding:0px 0px">
+			<!-- <img src="vistas/img/plantilla/LHOR.png" class="img-responsive d-none d-md-block" style="padding:0px 0px"> -->
+			<img src="vistas/img/plantilla/logo-blanco-lineal.png" class="img-responsive d-block d-md-none" style="padding:0px 0px">
 
 		</span>
 

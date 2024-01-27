@@ -1,4 +1,14 @@
+<style>
+  @media screen and (max-width: 767px) {
+    #pieChart{
+      height: auto;
+    }
+    element.style{
+      height: 0;
 
+    }
+  }
+</style>
   <?php
 
   $item = null;
@@ -30,11 +40,11 @@
 
         	<div class="row "style=" margin: auto;">
 
-  	        <div class="col-md-12"style=" margin: auto;">
+  	        <div class="col-md-10 "style=" margin: auto;">
 
   	 			    <div class="chart-responsive " style=" margin: auto;">
   
-  	            	<canvas id="pieChart" height="150" class="" style=" margin:auto; width:50%"></canvas>
+  	            	<canvas id="pieChart" height="150" class="" style=" margin:auto; width:64%"></canvas>
   
   	          	</div>
 
@@ -106,37 +116,37 @@
      ?>
     ];
     var xValues = PieData.map(item => item.label);
-var yValues = PieData.map(item => item.value);
-var barColors = PieData.map(item => item.color);
+    var yValues = PieData.map(item => item.value);
+    var barColors = PieData.map(item => item.color);
 
-new Chart("pieChart", {
-  type: "doughnut",
-  data: {
-    labels: xValues,
-    datasets: [{
-      backgroundColor: barColors,
-      data: yValues
-    }]
-  },
-  options: {
-    title: {
-      display: true,
-      text: "Productos mas vendidos"
-    },
-    legend: {
-      display: false // Oculta la leyenda
-    },
-    tooltips: {
-      enabled: false // Deshabilita los tooltips
-    },
-    plugins: {
-            subtitle: {
-                display: false,
-                text: 'Custom Chart Subtitle'
+    new Chart("pieChart", {
+      type: "doughnut",
+      data: {
+        labels: xValues,
+        datasets: [{
+          backgroundColor: barColors,
+          data: yValues
+        }]
+      },
+      options: {
+        title: {
+          display: true,
+          text: "Productos mas vendidos"
+        },
+        legend: {
+          display: false // Oculta la leyenda
+        },
+        tooltips: {
+          enabled: false // Deshabilita los tooltips
+        },
+        plugins: {
+                subtitle: {
+                    display: false,
+                    text: 'Custom Chart Subtitle'
+                }
             }
-        }
-  }
-});
+      }
+    });
     // -----------------
     // - END PIE CHART -
     // -----------------
